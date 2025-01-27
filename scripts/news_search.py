@@ -33,7 +33,7 @@ def search_news(output_path):
                 "pageSize": 30
             }
             response = requests.get(api_url, headers=headers, params=params)
-            response.raise_for_status()  # Raise an exception for HTTP errors
+            response.raise_for_status()  
             
             articles = response.json().get("articles", [])
             for article in articles:
@@ -54,7 +54,6 @@ def search_news(output_path):
                 "PublishedAt": ""
             })
     
-    # Save results to the CSV file
     with open(output_path, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=["Company", "Title", "Description", "URL", "PublishedAt"])
         writer.writeheader()
