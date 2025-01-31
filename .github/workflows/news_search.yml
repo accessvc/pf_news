@@ -29,7 +29,7 @@ jobs:
           python scripts/news_search.py --output artifacts/news_results.csv
 
       - name: Upload CSV Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: news_results
           path: artifacts/news_results.csv
