@@ -5,11 +5,11 @@ import argparse
 from datetime import datetime, timedelta, timezone
 
 def search_news(output_path):
-    companies = ["Kata.ai Indonesia", "SCAI Therapeutics", "Vexere Vietnam", "Spoon Korea", "Awair air quality", 
-                 "Volantis Indonesia", "Ecotruck Vietnam", "Zuzu Hospitality", "Koobits", "Common Computer Korea",
-                 "Perx Technologies", "Andalin Indonesia", "Abivin Vietnam", "PFC Technologies", "Akseleran Indonesia",
-                 "Seoul Robotics", "Viec.co Vietnam", "Palexy Vietnam", "Revival TV Indonesia", "Credolab",
-                 "Staffinc Indonesia", "Pion VCAT", "Aitomatic Semiconductor", "Volopay", "Coolmate Vietnam",
+    companies = ["Access Ventures", "Kata.ai Indonesia", "SCAI Therapeutics", "Vexere Vietnam", "Spoon Korea", 
+                 "Awair air quality", "Volantis Indonesia", "Ecotruck Vietnam", "Zuzu Hospitality", "Koobits", 
+                 "Common Computer Korea", "Perx Technologies", "Andalin Indonesia", "Abivin Vietnam", "PFC Technologies", 
+                 "Akseleran Indonesia", "Seoul Robotics", "Viec.co Vietnam", "Palexy Vietnam", "Revival TV Indonesia", 
+                 "Credolab", "Staffinc Indonesia", "Pion VCAT", "Aitomatic Semiconductor", "Volopay", "Coolmate Vietnam",
                  "Quotabook Korea", "Locad Logistics", "Plugo Indonesia", "M Village Vietnam", "Ulift Coding Valley",
                  "Phlox Korea", "Helicap Singapore"]
     api_url = "https://newsapi.org/v2/everything"
